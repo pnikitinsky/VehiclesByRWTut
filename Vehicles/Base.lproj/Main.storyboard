@@ -105,7 +105,7 @@
                                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="goForward" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="Gz0-rt-Qq6"/>
+                                                    <action selector="goForward:" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="lwp-8k-Kl5"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Po-T3-wE0">
@@ -118,7 +118,7 @@
                                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="stopMoving" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="6Ts-0H-TeD"/>
+                                                    <action selector="stopMoving:" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="yTN-Se-If4"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSe-lx-Zgn">
@@ -131,7 +131,7 @@
                                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="turn" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="agS-mY-A0H"/>
+                                                    <action selector="turn" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="ZNh-as-qa3"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHG-4v-O7i">
@@ -144,7 +144,7 @@
                                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="goBackward" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="ZnV-P9-0rj"/>
+                                                    <action selector="goBackward:" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="nEG-KY-WJi"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4m8-Be-oKK">
@@ -157,7 +157,7 @@
                                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="makeNoise" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="6hq-Vh-DbQ"/>
+                                                    <action selector="makeNoise:" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="Ajs-fF-qr2"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -181,6 +181,7 @@
                                 <constraints>
                                     <constraint firstItem="ZzS-KT-t8R" firstAttribute="top" secondItem="SVO-a5-Z9X" secondAttribute="top" constant="20" id="BIM-ar-6eM"/>
                                     <constraint firstAttribute="width" secondItem="ZzS-KT-t8R" secondAttribute="width" id="iMC-dv-GzR"/>
+                                    <constraint firstItem="ZzS-KT-t8R" firstAttribute="centerY" secondItem="SVO-a5-Z9X" secondAttribute="centerY" id="vgb-ca-tq5"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
