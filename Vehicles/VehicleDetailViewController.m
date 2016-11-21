@@ -13,7 +13,7 @@
 @property (nonatomic, weak) IBOutlet UILabel *vehicleDetailsLabel;
 @property (nonatomic, weak) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, weak) IBOutlet UIView *contentView;
-@property (weak, nonatomic) IBOutlet UITextView *blabla;
+
 
 @end
 
@@ -59,8 +59,8 @@
     if (self.detailVehicle) {
         self.title = [self.detailVehicle vehicleTitleString];
         self.vehicleDetailsLabel.text = [self.detailVehicle vehicleDetailsString];
-        self.blabla.text = [self.detailVehicle vehicleDetailsString];
-        NSLog(@"\n%@",[self.detailVehicle vehicleDetailsString]);
+       
+        
     }
 }
 
