@@ -20,5 +20,7 @@
 -(NSString *)changeGears: (NSString *)newGearName;
 -(NSString *)turn: (NSInteger)degrees;
 -(NSString *)makeNoise;
-
+//Convenience method for UITableViewCells and UINavigationBar titles.
+-(NSString *)vehicleTitleString;
+-(NSString *)vehicleDetailsString;
 @end

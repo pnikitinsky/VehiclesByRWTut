@@ -10,9 +10,11 @@
 #import "Vehicle.h"
 
 @interface VehicleDetailViewController ()
+@property (nonatomic, weak) IBOutlet UILabel *vehicleDetailsLabel;
 @property (nonatomic, weak) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, weak) IBOutlet UIView *contentView;
-@property (nonatomic, weak) IBOutlet UILabel *vehicleDetailsLabel;
+@property (weak, nonatomic) IBOutlet UITextView *blabla;
+
 @end
 
 @implementation VehicleDetailViewController
@@ -41,6 +43,7 @@
     //below the bottom of the CGRect that contains all the subviews so that it scrolls to the
     //appropriate point. 
     self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, CGRectGetMaxY(allSubviewsFrame) + 20);
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,7 +57,10 @@
 {
     // Update the user interface for the detail item.
     if (self.detailVehicle) {
-        //TODO: Fill this in.
+        self.title = [self.detailVehicle vehicleTitleString];
+        self.vehicleDetailsLabel.text = [self.detailVehicle vehicleDetailsString];
+        self.blabla.text = [self.detailVehicle vehicleDetailsString];
+        NSLog(@"\n%@",[self.detailVehicle vehicleDetailsString]);
     }
 }
 

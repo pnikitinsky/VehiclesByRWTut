@@ -14,12 +14,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     Vehicle *vehicle = [[Vehicle alloc] init];
-    NSLog(@"Vehicle turn: %@", [vehicle turn:700]);
-    NSLog(@"Vehicle change gears: %@", [vehicle changeGears:@"Test"]);
-    NSLog(@"Vehicle make noise: %@", [vehicle makeNoise]);
-    NSLog(@"Vehicle go forward: %@", [vehicle goForward]);
-    NSLog(@"Vehicle go backward: %@", [vehicle goBackward]);
-    NSLog(@"Vehicle stop oving: %@", [vehicle stopMoving]);
+//    NSLog(@"Vehicle turn: %@", [vehicle turn:700]);
+//    NSLog(@"Vehicle change gears: %@", [vehicle changeGears:@"Test"]);
+//    NSLog(@"Vehicle make noise: %@", [vehicle makeNoise]);
+//    NSLog(@"Vehicle go forward: %@", [vehicle goForward]);
+//    NSLog(@"Vehicle go backward: %@", [vehicle goBackward]);
+//    NSLog(@"Vehicle stop oving: %@", [vehicle stopMoving]);
     
     return YES;
 }
