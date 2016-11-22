@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38908D011DE45708006D9DBB /* VehicleList.m in Sources */ = {isa = PBXBuildFile; fileRef = 38908D001DE45708006D9DBB /* VehicleList.m */; };
 		E9DEF2E41DE31E5600BAAEA1 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DEF2E31DE31E5600BAAEA1 /* Car.m */; };
 		E9DEF2E91DE3624B00BAAEA1 /* Motorcycle.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DEF2E81DE3624B00BAAEA1 /* Motorcycle.m */; };
 		E9DEF2EC1DE364D600BAAEA1 /* Truck.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DEF2EB1DE364D600BAAEA1 /* Truck.m */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38908CFF1DE45708006D9DBB /* VehicleList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VehicleList.h; path = ../VehicleList.h; sourceTree = "<group>"; };
+		38908D001DE45708006D9DBB /* VehicleList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VehicleList.m; path = ../VehicleList.m; sourceTree = "<group>"; };
 		E9DEF2E21DE31E5600BAAEA1 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
 		E9DEF2E31DE31E5600BAAEA1 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		E9DEF2E71DE3624B00BAAEA1 /* Motorcycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Motorcycle.h; sourceTree = "<group>"; };
@@ -131,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				F5961A3017DD013A008D39EA /* AppDelegate.h */,
+				38908CFF1DE45708006D9DBB /* VehicleList.h */,
+				38908D001DE45708006D9DBB /* VehicleList.m */,
 				F5961A3117DD013A008D39EA /* AppDelegate.m */,
 				E9DEF2E21DE31E5600BAAEA1 /* Car.h */,
 				E9DEF2E31DE31E5600BAAEA1 /* Car.m */,
@@ -281,6 +286,7 @@
 			files = (
 				E9DEF2E41DE31E5600BAAEA1 /* Car.m in Sources */,
 				F5961A3217DD013A008D39EA /* AppDelegate.m in Sources */,
+				38908D011DE45708006D9DBB /* VehicleList.m in Sources */,
 				F5961A3817DD013A008D39EA /* VehicleListTableViewController.m in Sources */,
 				E9DEF2EC1DE364D600BAAEA1 /* Truck.m in Sources */,
 				F5961A2E17DD013A008D39EA /* main.m in Sources */,

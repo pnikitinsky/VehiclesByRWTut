@@ -9,12 +9,12 @@
 #import "Motorcycle.h"
 
 @implementation Motorcycle
--(id)init {
-    if (self = [super init]) {
-        self.numberOfWheels = 2;
-        self.powerSource = @"gas engine";
-    }
-    return self;
+
++(Motorcycle *)motorcycleWithBrandName:(NSString *)brandName modelName:(NSString *)modelName modelYear:(NSInteger)modelYear engineNoise:(NSString *)engineNoise
+{
+    Motorcycle *newMotorcycle = [Motorcycle vehicleWithBrandName:brandName modelName:modelName modelYear:modelYear powerSource:@"gas engine" wheels:2];
+    newMotorcycle.engineNoise = engineNoise;
+    return newMotorcycle;
 }
 
 #pragma mark - Superclass Overrides

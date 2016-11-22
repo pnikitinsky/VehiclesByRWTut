@@ -9,6 +9,12 @@
 #import "Truck.h"
 
 @implementation Truck
++(Truck *)truckWithBrandName:(NSString *)brandName modelName:(NSString *)modelName modelYear:(NSInteger)modelYear powerSource:(NSString *)powerSource wheels:(NSInteger)numberOfWheels cargoCapacityCubicFeet:(NSInteger)cargoCapacityCubicFeet
+{
+    Truck *newTruck = [Truck vehicleWithBrandName:brandName modelName:modelName modelYear:modelYear powerSource:powerSource wheels:numberOfWheels];
+    return newTruck;
+
+}
 - (NSString *)goForward {
     return [NSString stringWithFormat:@"%@ Depress gas pedal.", [self changeGears:@"Drive"]];
 }
@@ -49,7 +55,7 @@
     [truckDetailsBuilder appendString:@"\n\nTruck-Specific Details:\n\n"];
     
     //Add info about truck-specific features.
-    [truckDetailsBuilder appendFormat:@"Cargo Capacity: %d cubic feet", self.cargoCapacityCubicFeet];
+    [truckDetailsBuilder appendFormat:@"Cargo Capacity: %ld cubic feet", (long)self.cargoCapacityCubicFeet];
     
     //Create the final string by combining basic and truck-specific details.
     NSString *truckDetails = [basicDetails stringByAppendingString:truckDetailsBuilder];

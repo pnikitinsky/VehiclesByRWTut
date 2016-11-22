@@ -9,12 +9,21 @@
 #import "Car.h"
 
 @implementation Car
--(id)init {
-    if (self = [super init]) {
-        self.numberOfWheels = 4;
-    }
-    return self;
++(Car *)carWithBrandName:(NSString *)brandName modelName:(NSString *)modelName modelYear:(NSInteger)modelYear powerSource:(NSString *)powerSource numberOfDoors:(NSInteger)numberOfDoors convertible:(BOOL)isConvertible hatchback:(BOOL)isHatchback sunroof:(BOOL)hasSunroof
+{
+    //Create the car object using the superclass factory method.
+    Car *newCar = [Car vehicleWithBrandName:brandName modelName:modelName modelYear:modelYear powerSource:powerSource wheels:4];
+    
+    //Set the car-specific properties using the passed-in variables.
+    newCar.numberOfDoors = numberOfDoors;
+    newCar.isConvertible = isConvertible;
+    newCar.isHatchback = isHatchback;
+    newCar.hasSunroof = hasSunroof;
+    
+    //Return the fully instantiated Car object.
+    return newCar;
 }
+
 
 - (NSString *)start {
     return [NSString stringWithFormat:@"Start power source %@.", self.powerSource];

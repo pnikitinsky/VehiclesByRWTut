@@ -14,6 +14,7 @@
 @property (nonatomic, copy) NSString *brandName;
 @property (nonatomic, copy) NSString *modelName;
 @property (nonatomic, assign) NSInteger modelYear;
++ (instancetype)vehicleWithBrandName:(NSString *)brandName modelName:(NSString *)modelName modelYear:(NSInteger)modelYear powerSource:(NSString *)powerSource wheels:(NSInteger)numberOfWheels;
 -(NSString *)goForward;
 -(NSString *)goBackward;
 -(NSString *)stopMoving;
